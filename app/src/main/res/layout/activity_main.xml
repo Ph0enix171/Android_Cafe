@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:padding="28dp">
+
+<TextView
+    android:id="@+id/text_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:fontFamily="cursive"
+    android:text="Android Cafe"
+    android:textColor="@color/teal_200"
+    android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:padding="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="androidcafe@raccoon.com"
+        android:textColor="@color/teal_200"
+        android:textSize="16sp"
+        android:layout_below="@id/text_name"/>
+
+
+
+    <androidx.cardview.widget.CardView
+    android:id="@+id/card_starters"
+    android:layout_width="200dp"
+        app:cardCornerRadius="16dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/text_name"
+    android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/paneer_tikka_recipe_2_360x360" />
+
+        <TextView
+            android:id="@+id/text_starters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Starters"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_main"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    android:layout_below="@id/card_starters"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="60dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mains" />
+
+        <TextView
+            android:id="@+id/text_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Main Course"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_dessert"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/card_main"
+    app:cardCornerRadius="16dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="60dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dessert" />
+
+        <TextView
+            android:id="@+id/text_dessert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Desserts"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_beverages"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/card_dessert"
+    android:layout_centerHorizontal="true"
+    app:cardCornerRadius="16dp"
+    android:layout_marginTop="60dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/beverage" />
+
+        <TextView
+            android:id="@+id/text_beverages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Beverages"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+</RelativeLayout>
+</ScrollView>
